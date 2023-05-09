@@ -1,0 +1,95 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{368AB2E5-3A94-4920-B44E-60D0B03860EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "boot", "boot", "{A9152569-E381-4C69-B474-29B29130FF84}"
+	ProjectSection(SolutionItems) = preProject
+		boot.asm = boot.asm
+		disk.asm = disk.asm
+		mini_io.asm = mini_io.asm
+		mini_power.asm = mini_power.asm
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "kernel", "kernel", "{1957A7EF-2E48-4359-B534-D61A6D00A93B}"
+	ProjectSection(SolutionItems) = preProject
+		int_to_str.asm = int_to_str.asm
+		kernel.asm = kernel.asm
+		kernel_includes.asm = kernel_includes.asm
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "graphics", "graphics", "{5DD7B8BE-5CAC-44F7-9B21-C7E0FD48993F}"
+	ProjectSection(SolutionItems) = preProject
+		colors.asm = colors.asm
+		graphics.asm = graphics.asm
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "headbar", "headbar", "{3232840F-0A1B-46B6-9519-9696D02041ED}"
+	ProjectSection(SolutionItems) = preProject
+		dialogues.asm = dialogues.asm
+		headbar.asm = headbar.asm
+		headbar_items.asm = headbar_items.asm
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "settings", "settings", "{1F22DB52-474B-406B-85E5-5ED6D99DC65B}"
+	ProjectSection(SolutionItems) = preProject
+		color_settings.asm = color_settings.asm
+		data_settings.asm = data_settings.asm
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{2779E058-E184-493F-A0A2-37AD3BD856B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BCI", "BCI", "{A4FEC469-008C-48D6-9E85-916D84C5F782}"
+	ProjectSection(SolutionItems) = preProject
+		io.asm = io.asm
+		power.asm = power.asm
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "save system", "save system", "{8AEDB215-B472-4E2B-A92E-3C5877C1D1CC}"
+	ProjectSection(SolutionItems) = preProject
+		params_storage.asm = params_storage.asm
+		save_system.asm = save_system.asm
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "utils", "utils", "{C6A5880A-F335-4956-AB3C-24D683269185}"
+	ProjectSection(SolutionItems) = preProject
+		display_test.asm = display_test.asm
+		notepad.asm = notepad.asm
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "games", "games", "{9E3A37AB-64C8-44CB-A3A7-8E6BFEC62920}"
+	ProjectSection(SolutionItems) = preProject
+		clicker.asm = clicker.asm
+		tictactoe.asm = tictactoe.asm
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "minimal mode kernel", "minimal mode kernel", "{2D6CA5A9-BBD7-4DDE-9A36-1C8BD4119C1C}"
+	ProjectSection(SolutionItems) = preProject
+		actions.asm = actions.asm
+		actions_items.asm = actions_items.asm
+		minikrnl.asm = minikrnl.asm
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A9152569-E381-4C69-B474-29B29130FF84} = {368AB2E5-3A94-4920-B44E-60D0B03860EA}
+		{1957A7EF-2E48-4359-B534-D61A6D00A93B} = {368AB2E5-3A94-4920-B44E-60D0B03860EA}
+		{5DD7B8BE-5CAC-44F7-9B21-C7E0FD48993F} = {1957A7EF-2E48-4359-B534-D61A6D00A93B}
+		{3232840F-0A1B-46B6-9519-9696D02041ED} = {1957A7EF-2E48-4359-B534-D61A6D00A93B}
+		{1F22DB52-474B-406B-85E5-5ED6D99DC65B} = {1957A7EF-2E48-4359-B534-D61A6D00A93B}
+		{2779E058-E184-493F-A0A2-37AD3BD856B2} = {1957A7EF-2E48-4359-B534-D61A6D00A93B}
+		{A4FEC469-008C-48D6-9E85-916D84C5F782} = {1957A7EF-2E48-4359-B534-D61A6D00A93B}
+		{8AEDB215-B472-4E2B-A92E-3C5877C1D1CC} = {1957A7EF-2E48-4359-B534-D61A6D00A93B}
+		{C6A5880A-F335-4956-AB3C-24D683269185} = {2779E058-E184-493F-A0A2-37AD3BD856B2}
+		{9E3A37AB-64C8-44CB-A3A7-8E6BFEC62920} = {2779E058-E184-493F-A0A2-37AD3BD856B2}
+		{2D6CA5A9-BBD7-4DDE-9A36-1C8BD4119C1C} = {1957A7EF-2E48-4359-B534-D61A6D00A93B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14BF99AE-7642-44F2-B85D-D1479D0636C1}
+	EndGlobalSection
+EndGlobal

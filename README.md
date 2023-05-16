@@ -1,2 +1,1 @@
-#lcOS
-An OS written by noname guy.
+An OS written by noname guy who likes to sleep.

@@ -5,9 +5,7 @@ SetUp:
 	mov si, Welcome_dialog
 	call PrintString
 	call GetChar
-	cmp al, 0x0d
-	je Ready
-	jne Shutdown_jmp
+	jmp AlmostMain
 	ret
 
 FirstStart:
@@ -15,9 +13,9 @@ FirstStart:
 	mov si, First_Welcome_dialog
 	call PrintString
 	call GetChar
-	cmp al, 0x0d
-	je Ready
-	jne Shutdown_jmp
+	call RunColorSettings
+	mov bl, [Headbar_Color]
+	jmp Ready
 
 Ready:
 	call ClearScreen
@@ -25,14 +23,17 @@ Ready:
 	call PrintString
 	call SaveToHDD
 	call GetChar
+	jmp AlmostMain
+	
+AlmostMain:
 	call Draw_headbar
 	jmp main	
 
 First_Welcome_dialog:
-	db 'Hello! I am computer and i want to get  to know you. Do you want? If you want   press Enter.', 0x00
+	db 'Welcome to lcOS! Lets set it up. Please select a color.', 0x00
 
 Welcome_dialog:
-	db 'Hello again! Glad to see you ',0x03,'.         Press Enter to continue.', 0x00
+	db 'Welcome back!', 0x00
 
 Ready_dialog:
-	db 'Okay! Lets start! ', 0x03, 0x00
+	db 'All is ready. Lets start!', 0x00

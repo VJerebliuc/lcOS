@@ -4,7 +4,7 @@ SaveToHDD:
 	mov ah, 0x03
 	mov al, 1
 	mov cl, 0x08
-	mov bx, 0x8884
+	mov bx, 0x882a
 	int 0x13
 	.Exit:
 	mov bl, [Headbar_Color]

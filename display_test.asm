@@ -89,10 +89,10 @@ RunDisplayTest:
 	mov cx, 0x10
 	int 0x15
 	call ClearScreen
-	mov al, DARK_BLUE
+	mov al, PINK
 	call FillScreen
 	mov bl, WHITE
-	mov si, Dark_blue_text
+	mov si, Pink_text
 	call PrintString
 	mov ah, 0x86
 	mov cx, 0x10
@@ -141,11 +141,11 @@ Green_text:
 Cyan_text:
 	db 'Cyan', 0x00
 	
-Dark_blue_text:
-	db 'Dark blue', 0x00
+Pink_text:
+	db 'Pink', 0x00
 
 Black_text:
 	db 'Black', 0x00
 
 First_help:
-	db 'Display test 1.1. You should compare the text and color on the screen.          Press Ctrl+C to exit. Press any key to start...', 0x00
+	db 'Display test 1.2. You should compare the text and color on the screen.          Press Ctrl+C to exit. Press any key to start...', 0x00

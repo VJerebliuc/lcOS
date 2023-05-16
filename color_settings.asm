@@ -28,8 +28,9 @@ RunColorSettings:
 	mov bl, CYAN
 	call PrintString
 	mov si, table_tenth
-	mov bl, DARK_BLUE
+	mov bl, PINK
 	call PrintString
+	mov bl, WHITE
 
 	call GetChar
 
@@ -52,7 +53,7 @@ RunColorSettings:
 	cmp al, 57
 	je switch_to_cyan
 	cmp al, 48
-	je switch_to_darkblue
+	je switch_to_pink
 
 	jmp cs_Exit
 	
@@ -97,8 +98,8 @@ switch_to_cyan:
 	mov bl, CYAN
 	jmp cs_Exit
 
-switch_to_darkblue:
-	mov bl, DARK_BLUE
+switch_to_pink:
+	mov bl, PINK
 	jmp cs_Exit
 
 
@@ -130,4 +131,4 @@ table_nineth:
 	db '9-Cyan', 0x0a,0x0d,0x00
 
 table_tenth:
-	db '0-Dark blue', 0x0a,0x0d, 0x00
+	db '0-Pink', 0x0a,0x0d, 0x00

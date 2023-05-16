@@ -23,7 +23,7 @@ MinimalMode:
 	db 0x00
 
 KERNEL_VER:
-	db 'lcOS version 1.1',0x00
+	db 'lcOS version 1.2',0x00
 
 ; KERNEL MINIMAL MODE
 

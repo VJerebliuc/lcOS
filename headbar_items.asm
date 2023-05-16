@@ -11,7 +11,7 @@ Utils_Items_str:
 	db '1-Back, 2-Notepad, 3-Display test', 0
 
 Power_Items_str:
-	db '1-Back, 2-Reboot, 3-Turn off', 0
+	db '1-Back, 2-Reboot, 3-Shutdown', 0
 
 Games_Items_str:
 	db '1-Back, 2-Clicker', 0
